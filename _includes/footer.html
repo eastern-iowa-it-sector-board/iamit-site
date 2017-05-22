@@ -1,0 +1,13 @@
+<footer class="pv4 ph3 ph5-m ph6-l mid-gray">
+  <div class="tc mb2">
+    {% for nav-links in site.data.nav-links %}
+  <a href="{{nav-links.href}}" class="f6 f5-ns dib ph1 link gray hover-black b">{{nav-links.text}}</a>
+{% endfor %}
+    <br/>
+    <a href="/terms-of-service" class="f6 dib ph1 link gray hover-black">Terms</a>
+    <a href="/privacy-policy" class="f6 dib ph1 link gray hover-black">Privacy</a>
+    <a href="#top" class="f6 dib ph1 link bg-black white">Back To Top</a>
+  </div>
+  <small class="f6 db tc">© 2016<script>new Date().getFullYear()>2015&&document.write("-"+new Date().getFullYear());</script> <b class="ttu">{{ site.company }}</b>., All Rights Reserved</small>
+  <small class="f7 db"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> This workforce solution is funded by the IHUM Consortium which is 100% financed through a $15,000,000 grant from the U.S. Department of Labor’s Employment &amp; Training Administration. The product was created by the grantee and does not necessarily reflect the official position of the U.S. Department of Labor. The Department of Labor makes no guarantees, warranties, or assurances of any kind, express or implied, with respect to such information, including any information on linked sites and including, but not limited to, accuracy of the information or its completeness, timeliness, usefulness, adequacy, continued availability, or ownership. This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit <a href="http://creativecommons.org/licenses/by/4.0/" class="link black underline">http://creativecommons.org/licenses/by/4.0/</a>.</small>
+</footer>

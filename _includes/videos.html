@@ -1,0 +1,11 @@
+<div class="siema mw7 db-ns dn center mb3">
+{% for front-page-video in site.data.front-page-video %}
+<div class="aspect-ratio aspect-ratio--16x9">
+    <iframe  src="https://www.youtube.com/embed/{{front-page-video.link}}" frameborder="0" allowfullscreen class="aspect-ratio--object"></iframe>
+  </div>
+{% endfor %}
+</div>
+<div class="mw7 db-ns dn center">
+<span class="fl prev white f3 pa2 ma0 pointer">&#x2190;</span>
+<span class="fr next white f3 pa2 ma0 pointer">&#x2192;</span>
+</div>

@@ -1,0 +1,12 @@
+<script src="siema.js"></script>
+<script>
+const mySiema = new Siema({
+  loop: true,
+    perPage: 1,
+});
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+prev.addEventListener('click', () => mySiema.prev());
+next.addEventListener('click', () => mySiema.next());
+</script>

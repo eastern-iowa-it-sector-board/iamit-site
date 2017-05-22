@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+  <div class="w-100 mw8-ns center pa3 sans-serif">
+    {% include header.html %}
+    <main class="w-100">{{content}}</main>
+    {% include footer.html %}
+  </div>
+    {% if page.url == "/" %}
+    {% include siema.html %}
+  {% endif %}
+  {% include ga.html %}
+</body>
+
+</html>

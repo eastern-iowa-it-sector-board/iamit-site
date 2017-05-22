@@ -1,0 +1,5 @@
+{% for image in site.static_files %}
+{% if image.path contains 'assets/images/member-logos' %}
+<img src="{{ image.path }}" alt="{{ image.name }}" class="mw5 dib v-mid ph3">
+{% endif %}
+{% endfor %}
